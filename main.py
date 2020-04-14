@@ -5,6 +5,7 @@ root = tk.Tk()
 
 
 def main():
+    root.geometry("1500x500")
     menu_setup(root)
     root.mainloop()
 
@@ -35,6 +36,7 @@ def menu_setup(root):
     adjustmenu.add_command(label="Tolerance Foreground")
     adjustmenu.add_command(label="Color Tolerance Foreground")
     adjustmenu.add_command(label="Distance Tolerance Foreground")
+    adjustmenu.add_separator()
     adjustmenu.add_command(label="Tolerance Background")
     adjustmenu.add_command(label="Color Tolerance Background")
     adjustmenu.add_command(label="Distance Tolerance Background")
