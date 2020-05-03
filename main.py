@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+from tkinter import filedialog
 
 root = tk.Tk()
 
@@ -55,7 +56,10 @@ def quit():
 
 
 def open_image():
-    print("TODO: open image")
+    root.filename = filedialog.askopenfilename(initialdir="/", title="Select file",
+                                               filetypes=(("jpeg files", "*.jpg"), ("png files", "*.png")))
+    print(root.filename)
+    print("TODO: load image into UI")
 
 
 def save_image():
